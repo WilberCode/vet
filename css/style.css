@@ -922,7 +922,13 @@ body {
 
 @media screen and (min-width: 1024px) {
   .nav-container {
-    background: #4FA6A0; } }
+    background: #4FA6A0; }
+    .nav-container.sticky {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      background: rgba(79, 166, 160, 0.8); } }
 
 .main-banner__copy {
   position: absolute;
@@ -954,7 +960,8 @@ body {
     display: block; }
 
 .about-us {
-  padding-top: 1.5em; }
+  padding-top: 1.5em;
+  padding-bottom: 1em; }
   .about-us__title {
     margin: 0; }
   .about-us__subtitle {
@@ -963,7 +970,8 @@ body {
   .about-us__cta {
     background: white;
     color: #4FA6A0;
-    border: 1px solid #4FA6A0; }
+    border: 1px solid #4FA6A0;
+    border-radius: 4px; }
     .about-us__cta:hover {
       background: #f2f2f2;
       text-decoration: none; }
@@ -971,6 +979,9 @@ body {
       -webkit-transform: scale(0.97);
       -ms-transform: scale(0.97);
       transform: scale(0.97); }
+  @media screen and (min-width: 1024px) {
+    .about-us {
+      padding-bottom: 0em; } }
 
 .feature-container {
   position: relative;
@@ -990,7 +1001,7 @@ body {
   z-index: 10;
   color: #fff;
   text-align: center;
-  padding: 2em 0; }
+  padding: 3em 0; }
   .feature__icon {
     font-size: 3em; }
   .feature__numbers {
@@ -1145,7 +1156,7 @@ body {
 .testimonials {
   position: relative;
   text-align: center;
-  background: url(https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+  background: url(https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   color: rgba(255, 255, 255, 0.5);
   padding: 2.4em; }
   .testimonials::before {

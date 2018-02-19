@@ -14,6 +14,7 @@ body{
 //Menu
 .main-menu{
     @include edMenu(l);
+   
     a{
         color: #fff;
         text-transform: uppercase;
@@ -22,11 +23,13 @@ body{
             background:rgba(#000,0.2);
         }
     }
+   
 }
-.main-nav{
+.main-nav{ 
     @include edNav('right',l);
+   
     @include to(l){
-        background: rgba($color2,0.9);
+        background: rgba($color2,0.9); 
     }
  
 }
@@ -37,8 +40,15 @@ body{
 .nav-container{
     @include from(l){ 
         background: $color2;
-    }
-
+        &.sticky{
+            position: fixed;
+            width: 100%;
+            top:0; 
+            z-index: 100;
+            background: rgba($color2,.8);
+        }
+    }  
+  
 }
 //Banner
 .main-banner{ 
@@ -53,6 +63,7 @@ body{
         @include from(m){
             font-size:2em;  
         }
+        
         span{
             display: block;
             margin-bottom: 10px;
@@ -79,8 +90,8 @@ body{
 }
 //about us
 .about-us{
-    padding-top:1.5em;
-
+    padding-top:1.5em; 
+    padding-bottom: 1em; 
     &__title{
         margin: 0;
     }
@@ -92,6 +103,10 @@ body{
     &__cta{
         @include edgridButton(white,$color2);
         border: 1px solid $color2;
+        border-radius: 4px;
+    }
+    @include from(l){
+        padding-bottom: 0em;
     }
 }
 .feature-container{
@@ -113,9 +128,10 @@ body{
     z-index: 10;
     color: #fff;    
     text-align: center;
-    padding: 2em 0;
+    padding: 3em 0;
     &__icon{
        font-size: 3em;
+   
     }
     &__numbers{
         font-size: 1.8em;
@@ -211,7 +227,7 @@ body{
 .testimonials{ 
     position: relative;
     text-align: center;
-    background:url(https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+    background:url(https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
     color: rgba(#fff,.5); 
     padding: 2.4em;  
     &::before{
