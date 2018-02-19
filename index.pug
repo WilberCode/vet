@@ -19,4 +19,78 @@ block aboutUS
                 h2.about-us__title About Clinic
                 p.about-us__subtitle Pets best frineds
                 p.about-us__content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sed error corrupti veritatis voluptate. Sit unde, reprehenderit, quasi accusamus quae voluptatem numquam alias mollitia repellat ipsum debitis, delectus temporibus expedita?     
-                a(href="#").about-us__cta Contac Us
+                a(href="#").about-us__cta Contac Us.
+block features 
+    .feature-container
+        .ed-container 
+            .ed-item.s-50.l-25  
+                .feature
+                    .icon-heart.feature__icon
+                    .feature__numbers 12964
+                    .feature__subtitle Happy Clients    
+            .ed-item.s-50.l-25  
+                .feature
+                    .icon-heart.feature__icon  
+                    .feature__numbers 12964
+                    .feature__subtitle Happy Clients    
+            .ed-item.s-50.l-25  
+                .feature
+                    .icon-heart.feature__icon  
+                    .feature__numbers 12964
+                    .feature__subtitle Happy Clients    
+            .ed-item.s-50.l-25  
+                .feature
+                    .icon-heart.feature__icon  
+                    .feature__numbers 12964
+                    .feature__subtitle Happy Clients    
+block services
+     .ed-container
+        .ed-item
+          h2.services-title Our 
+              span Services & Procedures
+          p.services-subtitle Lorem Lipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, esse?.
+            
+            .services-container
+             -var i = 6
+             -while(i--)
+              .service
+                .service-icon.icon-dog
+                h3.service-title Wellness Care
+                p.services-content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, temporibus.
+block gallery
+    .gallery
+      -var n = 8
+      -while(n--)
+        .gallery-item
+            img(src="https://github.com/edgrid/edtaller69/blob/master/img/dog-window.jpg?raw=true", alt="")               
+block pricing
+    .pricing
+        h2.pricing-title Pricing tables
+
+    .ed-container.pricing-tables
+      -var n = 3
+      -while(n--)
+        .ed-item.l-1-3
+            ul.pricing-table
+                li.pricing-table__title Preventive 
+                   span Inspection 
+                li.pricing-table__price 99.99
+                li.pricing-table__feature Feature 1
+                li.pricing-table__feature Feature 2
+                li.pricing-table__feature Feature 3
+                li.pricing-table__feature Feature 4
+                li.pricing-table__feature Feature 5
+                li: a(href="#").pricing-table__cta Solicitar.
+block testimonials
+    .testimonials
+        .ed-container
+            h1.testimonials__title  What 
+              span Clients Say
+            p.testimonials__subtitle Lorem ipsum do adipisicing lorem do
+            img(src="https://i.pinimg.com/736x/04/c9/e2/04c9e2d560708b5d78e9fc5fc748e309.jpg", alt="").testimonials__avatar     
+            p.testimonials__content Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque amet non possimus iste molestiae autem.
+            p.testimonials__datos Merrit 
+              span Shanches
+            p.testimonials__subdatos See you soon
+               
+               

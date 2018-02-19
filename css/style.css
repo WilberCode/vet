@@ -54,7 +54,7 @@ a {
 | $gutter: separaci├│n entre cada item de la cuadricula (opcional)
 |
 */
-.button, .about-us__cta {
+.button, .about-us__cta, .pricing-table__cta {
   display: inline-block;
   padding: .8em 1.6em;
   cursor: pointer;
@@ -971,5 +971,216 @@ body {
       -webkit-transform: scale(0.97);
       -ms-transform: scale(0.97);
       transform: scale(0.97); }
+
+.feature-container {
+  position: relative;
+  background: url(https://github.com/edgrid/edtaller69/blob/master/img/mascota.jpg?raw=true) center/cover;
+  margin-bottom: 2em; }
+  .feature-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(79, 166, 160, 0.85); }
+
+.feature {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0; }
+  .feature__icon {
+    font-size: 3em; }
+  .feature__numbers {
+    font-size: 1.8em; }
+
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-bottom: 2em; }
+  .services-container img {
+    display: block; }
+  body {
+    overflow-x: hidden; }
+  .services-container > .service {
+    width: calc(100% - 2em);
+    margin: 1em; }
+  @media screen and (min-width: 640px) {
+    .services-container > .service {
+      width: calc(50% - 2em); } }
+  @media screen and (min-width: 1024px) {
+    .services-container > .service {
+      width: calc(33.33333% - 2em); } }
+  @supports (grid-template-areas: "header") {
+    .services-container {
+      display: grid;
+      grid-gap: 2em;
+      margin-left: 0;
+      margin-right: 0;
+      grid-template-columns: repeat(1, 1fr); }
+      body {
+        overflow-x: visible; }
+      @media screen and (min-width: 640px) {
+        .services-container {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media screen and (min-width: 1024px) {
+        .services-container {
+          grid-template-columns: repeat(3, 1fr); } }
+      .services-container > .service {
+        width: 100%;
+        margin: 0; } }
+
+.services-title, .services-subtitle {
+  text-align: center; }
+
+.service {
+  position: relative; }
+  .service-icon {
+    position: absolute;
+    font-size: 2.3em;
+    color: #81CDC6; }
+  .service-title, .service-content {
+    padding-left: 3em; }
+  .service-title {
+    margin-top: 0;
+    color: #4FA6A0; }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0; }
+  .gallery img {
+    display: block; }
+  body {
+    overflow-x: hidden; }
+  .gallery > .gallery-item {
+    width: calc(50% - 0);
+    margin: 0; }
+  @media screen and (min-width: 640px) {
+    .gallery > .gallery-item {
+      width: calc(25% - 0); } }
+  @supports (grid-template-areas: "header") {
+    .gallery {
+      display: grid;
+      grid-gap: 0;
+      margin-left: 0;
+      margin-right: 0;
+      grid-template-columns: repeat(2, 1fr); }
+      body {
+        overflow-x: visible; }
+      @media screen and (min-width: 640px) {
+        .gallery {
+          grid-template-columns: repeat(4, 1fr); } }
+      .gallery > .gallery-item {
+        width: 100%;
+        margin: 0; } }
+
+.pricing-title {
+  text-align: center; }
+
+.pricing-table {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  border: thin solid #81CDC6;
+  margin-bottom: 2em; }
+  .pricing-table__title {
+    position: relative;
+    padding: 1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    background: url(https://github.com/edgrid/edtaller69/blob/master/img/mascota.jpg?raw=true) center/cover;
+    z-index: -5; }
+    .pricing-table__title::before {
+      z-index: -2;
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(79, 166, 160, 0.85); }
+    .pricing-table__title span {
+      color: #fff;
+      display: inline-block;
+      padding-left: .2em; }
+  .pricing-table__price {
+    margin-top: .5em;
+    margin-bottom: .4em;
+    font-size: 4em;
+    text-align: center; }
+    .pricing-table__price::before {
+      content: '$';
+      font-size: .5em; }
+  .pricing-table__feature {
+    text-align: center;
+    padding: .5em 1em;
+    border-bottom: thin solid #ddd;
+    width: 90%;
+    margin: 0 auto; }
+  .pricing-table__cta {
+    background: #4FA6A0;
+    color: #fff;
+    margin: 1em auto;
+    display: table; }
+    .pricing-table__cta:hover {
+      background: #47958f;
+      text-decoration: none; }
+    .pricing-table__cta:active {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97); }
+
+.testimonials {
+  position: relative;
+  text-align: center;
+  background: url(https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2.4em; }
+  .testimonials::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(79, 166, 160, 0.85); }
+  .testimonials__title, .testimonials__subtitle, .testimonials__content, .testimonials__datos, .testimonials__avatar, .testimonials__subdatos {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 5; }
+  .testimonials span {
+    color: #fff; }
+  .testimonials__title {
+    font-weight: normal; }
+  .testimonials__subtitle {
+    font-size: 0.8em; }
+  .testimonials__avatar {
+    width: 4em;
+    height: 4em;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 1.6em auto;
+    border-radius: 50%; }
+  .testimonials__content {
+    margin: 0 5%;
+    padding-bottom: 1em; }
+    @media screen and (min-width: 1024px) {
+      .testimonials__content {
+        margin: 0 22%; } }
 
 
